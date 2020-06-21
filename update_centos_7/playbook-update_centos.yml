@@ -1,3 +1,4 @@
+---
 tasks:
   - name: Update Centos 7
     yum:
