@@ -7,4 +7,4 @@
     - name: Update all packages
       yum:
         name: "*"
-        state: state=latest
+        state: latest
