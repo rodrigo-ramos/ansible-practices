@@ -1,10 +1,10 @@
 ---
-- name: Install nginx
-  hosts: all
+- name: Update all packages
+  hosts: elastic_cluster
   become: true
 
   tasks:
-    - name: Update Centos 7
+    - name: Update all packages
       yum:
-        name: upgrade all packages
+        name: "*"
         state: state=latest
