@@ -1,6 +1,6 @@
 ---
 - name: Install nginx
-  hosts: elastic_cluster
+  hosts: all
   become: true
 
   tasks:
