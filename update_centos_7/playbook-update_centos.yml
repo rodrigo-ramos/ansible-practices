@@ -1,6 +1,10 @@
 ---
-tasks:
-  - name: Update Centos 7
-    yum:
-      name: upgrade all packages
-      state: name=* state=latest
+- name: Install nginx
+  hosts: host.name.ip
+  become: true
+
+  tasks:
+    - name: Update Centos 7
+      yum:
+        name: upgrade all packages
+        state: name=* state=latest
