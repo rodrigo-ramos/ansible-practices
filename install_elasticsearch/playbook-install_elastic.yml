@@ -8,7 +8,7 @@
       network.host: 0.0.0.0
       cluster.name: "test-cluster"
       cluster.initial_master_nodes: "host1"
-      discovery.seed_hosts: "0.0.0.0:9300"
+      discovery.seed_hosts: "rodrigoramosgo1c.mylabserver.com:9300"
       http.port: 9200
       node.data: false
       node.master: true
@@ -27,7 +27,7 @@
       network.host: 0.0.0.0
       cluster.name: "test-cluster"
       cluster.initial_master_nodes: "host1"
-      discovery.seed_hosts: "0.0.0.0:9300"
+      discovery.seed_hosts: "rodrigoramosgo2c.mylabserver.com:9300"
       http.port: 9200
       node.data: true
       node.master: false
