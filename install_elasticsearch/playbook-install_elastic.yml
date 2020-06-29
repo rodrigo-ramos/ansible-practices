@@ -4,6 +4,8 @@
   vars:
     es_heap_size: "1g"
     es_config:
+      node.name: "host1"
+      network.host: 0.0.0.0
       cluster.name: "test-cluster"
       cluster.initial_master_nodes: "host1"
       discovery.seed_hosts: "0.0.0.0:9300"
@@ -21,6 +23,8 @@
     es_data_dirs:
       - "/opt/elasticsearch"
     es_config:
+      node.name: "host2"
+      network.host: 0.0.0.0
       cluster.name: "test-cluster"
       cluster.initial_master_nodes: "host1"
       discovery.seed_hosts: "0.0.0.0:9300"
