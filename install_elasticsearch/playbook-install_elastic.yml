@@ -9,13 +9,13 @@
       http.port: 9200
       cluster.name: "test-cluster"
       #cluster.initial_master_nodes: "host1"
-      discovery.seed_hosts: "rodrigoramosgo1c.mylabserver.com"
-      http.port: 9200
-      node.data: false
+      discovery.seed_hosts: ["rodrigoramosgo2c.mylabserver.com"]
+      node.data: true
       node.master: true
       bootstrap.memory_lock: false
-    es_plugins:
-     - plugin: ingest-attachment
+      bootstrap.mlockall: true
+    #es_plugins:
+     #- plugin: ingest-attachment
 
 - hosts: host2
   roles:
@@ -28,10 +28,11 @@
       network.host: rodrigoramosgo2c.mylabserver.com
       cluster.name: "test-cluster"
       #cluster.initial_master_nodes: "rodrigoramosgo1c.mylabserver.com"
-      discovery.seed_hosts: rodrigoramosgo1c.mylabserver.com
+      discovery.seed_hosts: ["rodrigoramosgo1c.mylabserver.com"]
       http.port: 9200
       node.data: true
-      node.master: false
+      node.master: true
       bootstrap.memory_lock: false
-    es_plugins:
-      - plugin: ingest-attachment
+      bootstrap.mlockall: true
+   # es_plugins:
+    #  - plugin: ingest-attachment
