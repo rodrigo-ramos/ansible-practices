@@ -13,7 +13,7 @@
       node.data: true
       node.master: true
       bootstrap.memory_lock: false
-      bootstrap.mlockall: true
+      
     #es_plugins:
      #- plugin: ingest-attachment
 
@@ -33,6 +33,6 @@
       node.data: true
       node.master: true
       bootstrap.memory_lock: false
-      bootstrap.mlockall: true
+      
    # es_plugins:
     #  - plugin: ingest-attachment
